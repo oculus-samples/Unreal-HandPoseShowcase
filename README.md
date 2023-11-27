@@ -320,21 +320,21 @@ The easiest way to get started is to use the prebuilt Unreal Engine from the Epi
 3. Launch the Unreal Editor
 4. From "Recent Projects", click "Browse" and select `HandPoseShowcase.uproject`
 
-#### Oculus Unreal fork
+#### Meta fork of Epic’s Unreal Engine
 
-The Oculus Unreal fork will give you the most up to date integration of Oculus features. However, you must build the editor from its source.
+The Meta fork of Epic’s Unreal Engine will give you the most up to date integration of Oculus features. However, you must build the editor from its source.
 
 Follow the instructions on [Accessing Unreal Engine source code on GitHub](https://www.unrealengine.com/en-US/ue-on-github) to obtain:
 - an Epic account
 - a GitHub account
 - authorization to access the Unreal Engine source repository
-Disregard instructions on downloading Epic’s Unreal Engine source code as you will be building the Oculus-VR fork of Unreal Engine source.
+Disregard instructions on downloading Epic’s Unreal Engine source code as you will be building the Meta fork of Epic’s Unreal Engine source.
 
 Make sure you have Visual Studio installed properly:
 - Launch the Visual Studio Installer and click Modify for the Visual Studio version you want to use.
 - Under the Workloads tab, click Game development with C++ if it isn’t checked and then click Modify.
 
-1. Download the source code from the [Oculus-VR fork of Unreal Engine on GitHub](https://github.com/Oculus-VR/UnrealEngine).
+1. Download the source code from the [Meta fork of Epic’s Unreal Engine on GitHub](https://github.com/Oculus-VR/UnrealEngine).
 2. Follow Epic’s instructions on [Building Unreal Engine from Source](https://docs.unrealengine.com/5.2/en-US/building-unreal-engine-from-source/) to complete the process.
 
 Depending on your machine, the build may take awhile to complete.
