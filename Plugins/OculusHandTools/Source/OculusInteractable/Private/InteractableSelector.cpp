@@ -350,7 +350,7 @@ void AInteractableSelector::DestroyAimingActor()
 	if (!World)
 		return;
 
-	if (bAimingActorOwned && AimingActor->HasAuthority() && !AimingActor->IsPendingKillOrUnreachable())
+	if (bAimingActorOwned && AimingActor->HasAuthority() && IsValid(AimingActor) && !AimingActor->IsUnreachable())
 	{
 		World->DestroyActor(AimingActor);
 		AimingActor = nullptr;
