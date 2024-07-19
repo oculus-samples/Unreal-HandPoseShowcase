@@ -58,7 +58,7 @@ enum class EGestureStrengthBoneAngle : uint8
 
 /**
  * Actor component that recognizes gestures (i.e. poses over time).
- * 
+ *
  * @warning Must be attached to a UHandPoseRecognizer.
  */
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))

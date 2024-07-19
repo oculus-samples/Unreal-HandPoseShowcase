@@ -113,7 +113,7 @@ public:
 	/**
 	 * Used to record the minimum bone angles.
 	 * Copies all pitch/yaw/roll angles from Other that are smaller that our current ones.
- 	 * @param Other - Hand pose.
+	 * @param Other - Hand pose.
 	 */
 	void Min(const FHandPose& Other);
 

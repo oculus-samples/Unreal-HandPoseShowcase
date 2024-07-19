@@ -312,8 +312,8 @@ The easiest way to get started is to use the prebuilt Unreal Engine from the Epi
 1. Install the [Epic Games Launcher](https://www.epicgames.com/store/en-US/download)
 2. In the launcher, install UE5 (recommended).
 3. Download and install the MetaXR plugin from the [Unreal Engine 5 Integration download page](https://developer.oculus.com/downloads/package/unreal-engine-5-integration).
-3. Launch the Unreal Editor
-4. From "Recent Projects", click "Browse" and select `HandPoseShowcase.uproject`
+4. Launch the Unreal Editor
+5. From "Recent Projects", click "Browse" and select `HandPoseShowcase.uproject`
 
 #### Meta fork of Epic’s Unreal Engine
 
@@ -330,9 +330,14 @@ Make sure you have Visual Studio installed properly:
 - Under the Workloads tab, click Game development with C++ if it isn’t checked and then click Modify.
 
 1. Download the source code from the [Meta fork of Epic’s Unreal Engine on GitHub](https://github.com/Oculus-VR/UnrealEngine).
-2. Follow Epic’s instructions on [Building Unreal Engine from Source](https://docs.unrealengine.com/5.2/en-US/building-unreal-engine-from-source/) to complete the process.
-
-Depending on your machine, the build may take awhile to complete.
+2. Open a command prompt in the root of the Unreal, then run this command:
+```sh
+.\GenerateProjectFiles.bat -Game HandPoseShowcase -Engine <full path to Unreal-HandPoseShowcase directory>\HandPoseShowcase.uproject
+```
+3. Open the `HandPoseShowcase.sln` file that has been generated in the `Unreal-HandPoseShowcase` directory.
+4. Set `HandPoseShowcase` as the start-up project and `Development Editor` as the configuration.
+5. Hit `F5` to build and debug the project (and the engine).
+    - Depending on your machine, the build may take awhile to complete.
 
 # Licenses
 The Meta License applies to the SDK and supporting material. The MIT License applies to only certain, clearly marked documents. If an individual file does not indicate which license it is subject to, then the Meta License applies.

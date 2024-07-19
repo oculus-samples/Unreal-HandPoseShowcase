@@ -7,7 +7,7 @@
 #include "HandPoseShowcaseGameModeBase.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class HANDPOSESHOWCASE_API AHandPoseShowcaseGameModeBase : public AGameModeBase
