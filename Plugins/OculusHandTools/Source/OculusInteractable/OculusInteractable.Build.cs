@@ -1,4 +1,10 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+/*
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+*/
 
 using UnrealBuildTool;
 
@@ -38,7 +44,7 @@ public class OculusInteractable : ModuleRules
                 "Engine",
                 "Slate",
                 "SlateCore",
-				// ... add private dependencies that you statically link with here ...	
+				// ... add private dependencies that you statically link with here ...
 			}
             );
 
