@@ -9,7 +9,7 @@ visual effects, blueprints and C++ code to help you get started and,
 hopefully, inspire you to develop your own title for the Oculus platform.
 
 To make the showcase relevant to actual development needs, we are bringing
-to UE4 the *force grab* and *force throw* hand gameplay mechanics from
+to UE5 the *force grab* and *force throw* hand gameplay mechanics from
 *Tiny Castles*, a demo written in C# for the Unity game engine by our Menlo
 Park Strike Team.
 
@@ -43,7 +43,7 @@ and the selected object flies to your hand.
 
 ![Grabbing](./Documentation/Media/grabbing.png "Grabbing.")
 
-### 2. Simple Drop and Force Throw
+### 3. Simple Drop and Force Throw
 
 A grabbed object will float next to your hand as long as your hand is
 clenched.  The object is released when you open your hand, and will simply
@@ -55,7 +55,7 @@ both an audio and a visual effect, as can be seen below.
 
 ![Force Throw](./Documentation/Media/force_throw.png "Force throw.")
 
-### 3. The Projector
+### 4. The Projector
 
 Beyond experiencing the magic of grabbing and throwing objects in VR,
 our archaeological site has an educational side.  When you look to your
@@ -76,7 +76,7 @@ work.  To go to the next slide, just flick your hand like so:
 The projector will react to your gesture and move to the next side.  To go
 to the previous slide, do the same gesture using your left hand.
 
-### 4. The Slides
+### 5. The Slides
 
 a. Left Hand Poses
 
@@ -341,3 +341,9 @@ Make sure you have Visual Studio installed properly:
 
 # Licenses
 The Meta License applies to the SDK and supporting material. The MIT License applies to only certain, clearly marked documents. If an individual file does not indicate which license it is subject to, then the Meta License applies.
+
+# Changelog
+
+## April 2025
+* Update to use OpenXR from Epic with vendor extensions.
+* Use EnhancedInput for Unreal 5.
