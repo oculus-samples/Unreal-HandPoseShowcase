@@ -1,0 +1,9 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusInteractable\\Module.OculusInteractable.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusInteractable\\AimingActor.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusInteractable\\Interactable.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusInteractable\\InteractableSelector.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusInteractable\\OculusInteractableModule.cpp.obj"
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusUtils\\Module.OculusUtils.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusUtils\\OculusUtilsLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusUtils\\OculusUtilsModule.cpp.obj"
+	]
+}

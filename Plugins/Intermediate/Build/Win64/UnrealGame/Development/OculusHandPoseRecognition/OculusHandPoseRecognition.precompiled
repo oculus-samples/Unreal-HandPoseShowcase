@@ -1,0 +1,12 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\Module.OculusHandPoseRecognition.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\HandGesture.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\HandGestureRecognizer.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\HandPose.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\HandPoseRecognizer.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\HandRecognitionFunctionLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\HandRecognitionGameMode.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusHandPoseRecognition\\OculusHandPoseRecognitionModule.cpp.obj"
+	]
+}
