@@ -1,0 +1,9 @@
+{
+	"BuildId": "43139311",
+	"Modules": 
+	{
+		"OculusHandPoseRecognition": "UnrealEditor-OculusHandPoseRecognition.dll",
+		"OculusInteractable": "UnrealEditor-OculusInteractable.dll",
+		"OculusUtils": "UnrealEditor-OculusUtils.dll"
+	}
+}
