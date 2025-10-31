@@ -339,8 +339,19 @@ Make sure you have Visual Studio installed properly:
 5. Hit `F5` to build and debug the project (and the engine).
     - Depending on your machine, the build may take awhile to complete.
 
+### OpenXR version
+
+This project uses the Epic OpenXR plugin with vendor extensions. If you want to use the Oculus OVRPlugin instead, you can do so by following these steps:
+
+1. Open VRCharacter blueprint and find the ``LeftHandPoseRecognizer`` component.
+2. Paste the following values onto the ``Poses`` in the details panel:
+```((PoseName="ThumbUp",CustomEncodedPose="LT0-52-18+51T1+13-8+30T2+7-9-10T3-10+21+8I1+6-72+1I2-3-108+1I3+1-55-3M1+1-77-8M2-1-99+1M3-6-51-8R1-4-85-10R2-5-100-1R3-4-50-1P0+15-6-25P1+8-88+4P2-8-94-7P3-4-54+2W+81+0+0"),(PoseName="ThumbDown",CustomEncodedPose="LT0-49-22+55T1+15-7+30T2+8+1-10T3-10+16+8I1+8-61-3I2-3-106+1I3+1-57-3M1+3-73-10M2-1-93-1M3-8-64-7R1-3-81-15R2-5-89-2R3-4-66-1P0+15-6-25P1+7-77+5P2-7-88-8P3-4-62+3W-76+0+0"),(PoseName="OK",CustomEncodedPose="LT0-43-27+62T1-11-22+32T2+1-39-10T3-5-11+10I1-1-50+8I2-2-64-2I3+2-19-2M1+5-18-2M2+1-11-1M3+1+10-4R1+10+2-5R2+1-7-4R3-3-1-1P0+15-6-25P1-2+23+12P2+3-19-7P3-6+1+1W-15+0-97"),(PoseName="Peace",CustomEncodedPose="LT0-41-29+63T1-4-18+31T2-2-58-9T3-4-18+10I1-1-6+4I2+1-3-3I3+3+8-2M1+23-17-6M2+1-2-1M3+1+11-4R1+7-68-27R2-5-88-2R3-4-57-1P0+15-6-25P1+9-84-12P2-5-77-8P3-5-47+2W-15+0-91"),(PoseName="Spock",CustomEncodedPose="L T0-52-19+51 T1+31+4+32 T2+1-41-10 T3-6-6+10   I1*3+10+3+4 I2+1+1-3 I3+3+6-2  M1*3+7-1-1  M2+1+1-1 M3+1+11-4  R1*3+25+4-3 R2+1-1-4 R3-3+3+1  P0+15-6-25 P1*3+7+16+14 P2+5-2-5 P3-6+2+1  W-17+98-101"),(PoseName="Gun",CustomEncodedPose="LT0*3-61+1+31T1*3+12-8+30T2*3+6-13-10T3*3-10+21+8I1+16-22-1I2+1-2-3I3+3+2-2R1-2-77-12R2-5-100-1R3-4-57-1P0+15-6-25P1+8-90-3P2-5-76-8P3-4+0+3"),(PoseName="GunShot",CustomEncodedPose="LT0*3-59-4+35T1*3+18-5+30T2*3-1-53-9T3*3-6-9+10I1+14-27-2I2+1-6-3I3+3+1-2R1-3-78-13R2-5-102-1R3-4-58-1P0+15-6-25P1+8-95-3P2-5-76-8P3-4+0+2"),(PoseName="Stop",CustomEncodedPose="L T0-50-21+54 T1+28+2+32 T2+2-35-10 T3-5-11+10  I1*3+17-3+3 I2+1+1-3 I3+3+7-2  M1*3+15-6-2 M2+1+1-1 M3+1+11-4  R1*3+12+1-6 R2+1-1-4 R3-3+3+1  P0+15-6-25 P1*3-11+8+9  P2+4-5-5 P3-6-2+1  W-13+97-95"),(PoseName="Shaka",CustomEncodedPose="L T0-56-11+43 T1+8-11+30 T2+6-13-10 T3-10+21+8 I1+7-79-5 I2-3-92-1 I3+1-49-3 M1+1-83-12 M2-1-89-1 M3-5-43-8 R1+2-67-17 R2-5-96-1 R3-4-45-1 P0+15-6-25 P1+15-12+7 P2+3-16-6 P3-6+2+1 W+0+0-92"))```
+
+![Pose details panel](./Documentation/Media/pose_details_panel.png "Pose details panel.")
+
+
 # Licenses
-The Meta License applies to the SDK and supporting material. The MIT License applies to only certain, clearly marked documents. If an individual file does not indicate which license it is subject to, then the Meta License applies.
+The [Meta License](./LICENSE) applies to the SDK and supporting material. The MIT License applies to only certain, clearly marked documents. If an individual file does not indicate which license it is subject to, then the Meta License applies.
 
 # Changelog
 
