@@ -14,7 +14,7 @@ LICENSE file in the root directory of this source tree.
 
 /** Bones that we care about. */
 UENUM()
-enum RecognizedBone
+enum class RecognizedBone : uint8
 {
 	Thumb_0 = 0,
 	Thumb_1,
@@ -36,6 +36,11 @@ enum RecognizedBone
 	Wrist,
 	NUM
 };
+
+constexpr int32 BoneIndex(RecognizedBone Bone)
+{
+	return static_cast<int32>(Bone);
+}
 
 /** A struct that represents a hand pose. */
 USTRUCT(BlueprintType)
@@ -78,7 +83,7 @@ public:
 	 */
 	const FRotator& GetRotator(RecognizedBone Bone) const
 	{
-		return Rotations[Bone];
+		return Rotations[BoneIndex(Bone)];
 	}
 
 	/**
@@ -135,8 +140,8 @@ protected:
 	EOculusXRHandType Hand;
 
 	/** Hand bone rotators. */
-	FRotator Rotations[RecognizedBone::NUM];
+	FRotator Rotations[BoneIndex(RecognizedBone::NUM)];
 
 	/** Hand bone weights. */
-	float Weights[RecognizedBone::NUM];
+	float Weights[BoneIndex(RecognizedBone::NUM)];
 };

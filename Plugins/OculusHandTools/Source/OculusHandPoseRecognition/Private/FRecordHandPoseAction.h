@@ -97,10 +97,11 @@ protected:
 		float TotalSquare0250Error = 0.0f;
 		float TotalSquare0125Error = 0.0f;
 
-		for (int Bone = 0; Bone < RecognizedBone::NUM; ++Bone)
+		for (int Bone = 0; Bone < BoneIndex(RecognizedBone::NUM); ++Bone)
 		{
-			FRotator MinRot = MinPose.GetRotator(RecognizedBone(Bone));
-			FRotator MaxRot = MaxPose.GetRotator(RecognizedBone(Bone));
+			const RecognizedBone RecognizedBoneValue = static_cast<RecognizedBone>(Bone);
+			FRotator MinRot = MinPose.GetRotator(RecognizedBoneValue);
+			FRotator MaxRot = MaxPose.GetRotator(RecognizedBoneValue);
 
 			// Range is as large as 180 degrees.
 			float PitchRange = FMath::Abs(FMath::FindDeltaAngleDegrees(MaxRot.Pitch, MinRot.Pitch));
@@ -113,7 +114,7 @@ protected:
 			TotalSquare0125Error += FMath::Square(0.125 * PitchRange) + FMath::Square(0.125 * YawRange) + FMath::Square(0.125 * RollRange);
 
 			UE_LOG(LogHandPoseRecognition, Warning, TEXT("%8s pitch %6.2f [%+7.2f .. %+7.2f]  yaw %6.2f [%+7.2f .. %+7.2f]  roll %6.2f [%+7.2f .. %+7.2f]"),
-				*UEnum::GetValueAsString(RecognizedBone(Bone)),
+				*StaticEnum<RecognizedBone>()->GetNameStringByValue(Bone),
 				PitchRange, MinRot.Pitch, MaxRot.Pitch,
 				YawRange, MinRot.Yaw, MaxRot.Yaw,
 				RollRange, MinRot.Roll, MaxRot.Roll);
